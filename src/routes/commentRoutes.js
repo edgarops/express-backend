@@ -3,7 +3,7 @@ const routes = Router();
 
 const authMiddleware = require("../middleware/auth");
 
-const ValidationComment = require("../validations/ValidationComment");
+const ValidationComment = require("../validations/validationComment");
 
 const CommentController = require("../controllers/CommentController");
 
