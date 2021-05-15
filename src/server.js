@@ -8,10 +8,10 @@ const cors = require('cors');
 
 const app = express();
 
-/*app.use(cors({
-    AllowedOrigin: 'https://photogramops.herokuapp.com/signin'
+app.use(cors({
+    Access-Control-Allow-Origin: 'https://photogramops.herokuapp.com/signin'
     //exposedHeaders: "X-Total-Count"
-})); //aqui se podria poner direccion origin: 'ip' o con un array*/
+})); //aqui se podria poner direccion origin: 'ip' o con un array
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(
