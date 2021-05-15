@@ -2,8 +2,8 @@ require("dotenv").config();
 
 module.exports={
     "production": {
-        "use_env_variable": "DATABASE_URL",
-        "dialect": "postgres"
+        use_env_variable: "DATABASE_URL",
+        dialect: "postgres"
     //dialect:"postgres"
     /*host: process.env.DB_HOST,
     username: process.env.DB_USERNAME,
