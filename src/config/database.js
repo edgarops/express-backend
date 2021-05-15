@@ -11,7 +11,7 @@ module.exports={
         timestamps: true,
         underscored: true
     },
-     "dialectOptions": {
+     dialectOptions: {
         ssl: {
             require: true,
             rejectUnauthorized: false
