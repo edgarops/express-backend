@@ -35,7 +35,7 @@ app.use(
 );
 app.use(appRoutes);
 
-//console.log("Database_URL", process.env.DATABASE_URL);
+console.log("Database_URL", process.env.DATABASE_URL);
 const port = process.env.PORT || 3000
 
 app.listen(port, () => console.log('server started on port', port))
