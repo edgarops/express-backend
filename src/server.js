@@ -4,7 +4,7 @@ const express = require("express");
 const path = require("path");
 const appRoutes = require('./routes/index');
 const cors = require('cors');
-const timeout = require('connect-timeout');
+//const timeout = require('connect-timeout');
 
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(cors({
     optionsSuccessStatus: 200
     //exposedHeaders: "X-Total-Count"
 })); //aqui se podria poner direccion origin: 'ip' o con un array
-app.use(timeout('15s'));
+//app.use(timeout('15s'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(
