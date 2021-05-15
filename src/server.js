@@ -17,9 +17,9 @@ app.use(cors({
 //app.use(timeout('15s'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.use(
+/*app.use(
     "/files", express.static(path.resolve(__dirname, "../", "tmp", "uploads"))
-);
+);*/
 app.use(appRoutes);
 
 console.log("Database_URL", process.env.DATABASE_URL);
