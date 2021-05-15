@@ -3,12 +3,12 @@ const {Router} = require('express');
 const appRoutes = Router();
 
 const authRoutes = require("./authRoutes");
-const userRoutes = require("./userRoutes");
-const photoRoutes = require("./photoRoutes");
-const likeRoutes = require("./likeRoutes");
-const commentRoutes = require("./commentRoutes");
-const followRoutes = require("./followRoutes");
-const feedRoutes = require("./feedRoutes");
+//const userRoutes = require("./userRoutes");
+//const photoRoutes = require("./photoRoutes");
+//const likeRoutes = require("./likeRoutes");
+//const commentRoutes = require("./commentRoutes");
+//const followRoutes = require("./followRoutes");
+//const feedRoutes = require("./feedRoutes");
 
 appRoutes.use("/auth", authRoutes);
 //appRoutes.use("/users", userRoutes);
