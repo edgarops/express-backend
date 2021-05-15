@@ -10,8 +10,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin:true,credentials: true
-    //optionsSuccessStatus: 200
+    //origin:true,credentials: true
+    origin: 'https://photogramops.herokuapp.com',
+    optionsSuccessStatus: 200
     //exposedHeaders: "X-Total-Count"
 })); //aqui se podria poner direccion origin: 'ip' o con un array
 //app.use(timeout('15s'));
