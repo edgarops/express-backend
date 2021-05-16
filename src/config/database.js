@@ -2,18 +2,14 @@ require("dotenv").config();
 
 module.exports={
     
-        /*use_env_variable: "DATABASE_URL",
+        use_env_variable: "DATABASE_URL",
         dialect: "postgres",
         
         dialectOptions: {
             ssl: true,
             rejectUnauthorized: false,
-        }*/
-        storageMethod: 'sql',
-    sqlDialect: 'postgres',
-    sqlConnectionSsl: true,
-    sqlConnectionUrl: process.env.DATABASE_URL,
-    sqlDialectOptions: {ssl: true},
+        }
+        
     //dialect:"postgres"
     /*host: process.env.DB_HOST,
     username: process.env.DB_USERNAME,
